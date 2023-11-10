@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: serif;
+            color:#333;
+            line-height : 1.5;
+            height:100vh;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: lightgreen;
+        }
+        
+        .show-modal{
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 1.75cm 3.5cm;
+            margin :5rem 2rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: 1.8rem;
+
+        }
+        .hidden {
+            display:none;
+        }
+        .modal{
+            position: absolute;
+            top :50%;
+            left:50%;
+            transform :translate(-50%,-50%);
+            width : 70%;
+            background-color: white;
+            padding: 6rem;
+            border-radius: 5px;
+            box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button class="show-modal">show modal 1</button>
+    <button class="show-modal">show modal 2</button>
+    <button class="show-modal">show modal 3</button>
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Im a modal window</h1>
+        <p>kirennnnnnnnnnnnnnnnnnnnnnnnn
+            nnnnnnnnnnnnnnnnnnnnnn
+            nnnnnnnnnnnnnnnnnnnnnnnnndddd            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem provident enim fuga distinctio soluta accusamus qui nesciunt earum nisi, atque excepturi, modi vero, quae rerum maxime itaque quasi. In, corporis.
+            ddddddddddddddddd
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem provident enim fuga distinctio soluta accusamus qui nesciunt earum nisi, atque excepturi, modi vero, quae rerum maxime itaque quasi. In, corporis.</p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="projet2.js"></script>
+
+
+
+    
+</body>
+</html>
